@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
 Operadores de comparação
 
