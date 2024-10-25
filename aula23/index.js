@@ -21,9 +21,7 @@ if else = condições
 else =ultima opção
 
 
- */
-=======
-/**
+ *//**
 Operadores Lógicos
 
 && -> AND -> E
@@ -39,4 +37,3 @@ Operadores Lógicos
 //console.log(vaiLogar)
 
 console.log(!true)
->>>>>>> 6e37add1f31960236b04a6294009e787db3030e6
