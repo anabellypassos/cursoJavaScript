@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const hora  = 23;
 
 if (hora >= 0 && hora <=11){
@@ -21,3 +22,21 @@ else =ultima opção
 
 
  */
+=======
+/**
+Operadores Lógicos
+
+&& -> AND -> E
+|| -> OR -> OU
+! -> NOT -> NÃO
+
+ */
+
+//const usuario = 'Luiz';
+//const senha = '123456';
+
+//const vaiLogar = usuario === 'Luiz'&& senha === '123456';
+//console.log(vaiLogar)
+
+console.log(!true)
+>>>>>>> 6e37add1f31960236b04a6294009e787db3030e6
