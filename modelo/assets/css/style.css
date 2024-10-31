@@ -85,3 +85,12 @@ form input,form label,form button{
 form button:hover{
     background: var(--primary-color-darker);
 }
+.resultado{
+    background-color: aquamarine;
+    display: flex;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+
+}
