@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+ HEAD
 const hora  = 23;
 
 if (hora >= 0 && hora <=11){

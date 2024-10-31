@@ -18,7 +18,6 @@ const num2 = 11;
 const comp = num1<num2;
 
 console.log(comp);
-=======
 const pessoal1 = {
 nome: 'Luiz',
 sobrenome: 'Miranda',
@@ -36,4 +35,3 @@ pessoal1.fala();
 pessoal1.incrementaIdade();
 pessoal1.fala();
 pessoal1.incrementaIdade();
->>>>>>> 611e099540a1fa46dc7612e63a69633e4fed8344
