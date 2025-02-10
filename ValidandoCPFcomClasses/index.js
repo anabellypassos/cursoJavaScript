@@ -45,6 +45,8 @@ class ValidaCPF {
         if (typeof this.cpfLimpo !== 'string') return false;
         if (this.cpfLimpo.length !== 11) return false;
         if (this.éSequencia()) return false;
+
+
        this.geraNovoCpf()
            console.log(this.novoCPF);
 
