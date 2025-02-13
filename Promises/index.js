@@ -15,44 +15,43 @@ Uma Promise é criada usando o construtor Promise, que recebe uma função com d
 
 const minhaPromise = new Promise((resolve, reject) => {
     let sucesso = true; // Simulando um resultado
-  
-    setTimeout(() => {
-      if (sucesso) {
-        resolve("Deu certo!");
-      } else {
-        reject("Algo deu errado.");
-      }
-    }, 2000); // Simula um atraso de 2 segundos
-  });
 
-  /**Consumindo uma Promise
+    setTimeout(() => {
+        if (sucesso) {
+            resolve("Deu certo!");
+        } else {
+            reject("Algo deu errado.");
+        }
+    }, 2000); // Simula um atraso de 2 segundos
+});
+
+/**Consumindo uma Promise
 Para lidar com o resultado de uma Promise, usamos .then() e .catch(): */
 
-  minhaPromise
-  .then(resultado => {
-    console.log(resultado); // "Deu certo!"
-  })
-  .catch(erro => {
-    console.log(erro); // "Algo deu errado."
-  });
+minhaPromise
+    .then(resultado => {
+        console.log(resultado); // "Deu certo!"
+    })
+    .catch(erro => {
+        console.log(erro); // "Algo deu errado."
+    });
 
-  /**Encadeando Promises
+/**Encadeando Promises
 Podemos encadear várias Promises para executar operações assíncronas em sequência: */
-  function primeiraOperacao() {
+function primeiraOperacao() {
     return new Promise(resolve => {
-      setTimeout(() => resolve("Passo 1 concluído"), 1000);
+        setTimeout(() => resolve("Passo 1 concluído"), 1000);
     });
-  }
-  
-  function segundaOperacao(mensagem) {
+}
+
+function segundaOperacao(mensagem) {
     return new Promise(resolve => {
-      setTimeout(() => resolve(mensagem + " -> Passo 2 concluído"), 1000);
+        setTimeout(() => resolve(mensagem + " -> Passo 2 concluído"), 1000);
     });
-  }
-  
-  primeiraOperacao()
+}
+
+primeiraOperacao()
     .then(segundaOperacao)
     .then(resultadoFinal => {
-      console.log(resultadoFinal); // "Passo 1 concluído -> Passo 2 concluído"
+        console.log(resultadoFinal); // "Passo 1 concluído -> Passo 2 concluído"
     });
-  
